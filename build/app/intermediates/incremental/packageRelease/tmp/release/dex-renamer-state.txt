@@ -1,0 +1,4 @@
+#Tue May 18 11:22:19 IST 2021
+base.0=/home/shashank/Covid-help/build/app/intermediates/transforms/r8/release/0/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
