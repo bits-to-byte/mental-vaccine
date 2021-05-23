@@ -37,8 +37,8 @@ Let's see all the features at one place :stuck_out_tongue: ..........
      </tr>
      <tr>
           <td><img height="500" src="https://i.imgur.com/ucI0iDY.png" /><br /><center><b>COVID Stats</b></center></td>
-          <td><img height="500" src="https://i.imgur.com/mBPM0TJ.png" /><br /><center><b>Library</b></center></td>
           <td><img height="500" src="https://i.imgur.com/4IGiAYL.png" /><br /><center><b>Family Stats</b></center></td>
+       <td><img height="500" src="https://github.com/bits-to-byte/mental-vaccine/blob/main/screenrec/screen.gif?raw=true" /><br /><center><b>Demo</b></center></td>
      </tr>
 </table>
 
