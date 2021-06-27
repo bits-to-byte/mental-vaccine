@@ -30,15 +30,15 @@ Let's see all the features at one place :stuck_out_tongue: ..........
 ### :camera: Screenshots
 
 <table>
-     <tr>
-          <td><img height="400" src="https://i.imgur.com/t9T6Esg.png" /><br /><center><b>Chatbot</b></center></td>
-          <td><img height="400" src="https://i.imgur.com/aWtN48h.png" /><br /><center><b>Voice Assistant</b></center></td>
-          <td><img height="400" src="https://i.imgur.com/68Yo6Mb.png" /><br /><center><b>Fetched Tweets</b></center></td>
+       <tr>
+          <td><img height="400" src="https://i.imgur.com/xQSqKrL.png" /><br /><center><b>COVID Stats</b></center></td>
+          <td><img height="400" src="https://i.imgur.com/WtSooXd.png" /><br /><center><b>Survey</b></center></td>
+       <td><img height="400" src="https://i.imgur.com/7Z9ccU8.png" /><br /><center>Profile Page<b>Demo</b></center></td>
      </tr>
      <tr>
-          <td><img height="400" src="https://i.imgur.com/ucI0iDY.png" /><br /><center><b>COVID Stats</b></center></td>
-          <td><img height="400" src="https://i.imgur.com/4IGiAYL.png" /><br /><center><b>Family Stats</b></center></td>
-       <td><img height="340" src="https://github.com/bits-to-byte/mental-vaccine/blob/main/screenrec/screen.gif?raw=true" /><br /><center><b>Demo</b></center></td>
+          <td><img height="400" src="https://i.imgur.com/x2Oi1uG.png" /><br /><center><b>Chatbot</b></center></td>
+          <td><img height="400" src="https://i.imgur.com/aWtN48h.png" /><br /><center><b>Voice Assistant</b></center></td>
+          <td><img height="400" src="https://i.imgur.com/68Yo6Mb.png" /><br /><center><b>Fetched Tweets</b></center></td>
      </tr>
 </table>
 
