@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
 
-void main() async {
-  await DotEnv.load(fileName: ".env");
+void main() {
   runApp(MyApp());
-
 }
 
 final lightTheme = ThemeData(

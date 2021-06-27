@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/shashank/Covid-help/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "outputFile": "/home/shashank/Coviscible-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/6210bc4e94e1858432d46cb633a06a21/appcompat-1.0.1/res/values-v28/values-v28.xml",
+                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/ba08d36b5b478d3218f569346d9312a3/appcompat-1.0.1/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

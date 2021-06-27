@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "764214794755",
+    "firebase_url": "https://coviscible-3273b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "coviscible-3273b",
+    "storage_bucket": "coviscible-3273b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764214794755:android:5f621bc549ec592b38cc36",
+        "android_client_info": {
+          "package_name": "com.example.covid_help"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764214794755-9d7hm5t9ks7minmvf8vs2kahkb30lqak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1CeLb7s4kwyTXyAZbb1__rrMtoxA9ItE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764214794755-9d7hm5t9ks7minmvf8vs2kahkb30lqak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

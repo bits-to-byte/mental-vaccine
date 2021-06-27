@@ -3,6 +3,7 @@ import 'package:covid_help/components/listTile.dart';
 import 'package:covid_help/model/city.dart';
 import 'package:covid_help/model/country.dart';
 import 'package:covid_help/screens/SpeechScreen.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:geocoding/geocoding.dart' as geo;
 import 'package:covid_help/utils/apiData.dart';
 import 'package:geocoding/geocoding.dart';
@@ -16,11 +17,22 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> with TickerProviderStateMixin {
+  final fb = FirebaseDatabase.instance;
   Position _currentPosition;
   String _currentCity;
   String _currentState;
   String _currentLocality;
+  int totalCaseCount;
+  int active;
+  int deathCount;
+  int recoveredCount;
 
+  void _getStats(int totalCaseCount, int active, int deathCount, int recoveredCount) {
+    this.totalCaseCount = totalCaseCount;
+    this.active = active;
+    this.deathCount = deathCount;
+    this.recoveredCount = recoveredCount;
+  }
   _getCurrentLocation() {
     Geolocator()
         .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
@@ -61,6 +73,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    final ref = fb.reference();
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
@@ -92,15 +105,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
           ),
           CityDataList(
               city: _currentCity, state: _currentState, locality: _currentCity),
-          FloatingActionButton(
-            child: Icon(Icons.mic),
-            backgroundColor: Colors.green,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SpeechScreen()),
-              );
-              }),
+
         ],
       ),
     );
@@ -192,15 +197,27 @@ class GlobalDataList extends StatelessWidget {
 class CityDataList extends StatelessWidget {
   //var formatter = NumberFormat("###,###");
   final String city;
-
   final String locality;
   final String state;
 
   const CityDataList({this.city, this.locality, this.state, Key key});
 
+  int _getTotal(int totalCaseCount, int active, int deathCount, int recoveredCount) {
+    return totalCaseCount;
+    //this.active = active;
+   // this.deathCount = deathCount;
+    //this.recoveredCount = recoveredCount;
+  }
+  int _getactive(int totalCaseCount, int active, int deathCount, int recoveredCount) {
+    //return totalCaseCount;
+    return active;
+  }
+
   //const CityDataList({Key key, this.city, this.locality, this.state}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final FirebaseDatabase fb = FirebaseDatabase.instance;
+    final ref = fb.reference();
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Positioned(
@@ -213,9 +230,15 @@ class CityDataList extends StatelessWidget {
             int active = snapshot.data.active;
             int deathCount = snapshot.data.deaths;
             int recoveredCount = snapshot.data.recovered;
+            ref.child("Name - ").set("Shashank");
+            ref.child("Your Location - ").set(city+ " " + state);
+            ref.child("Total Confirmed case - ").set(totalCaseCount.toString());
+            ref.child("Total Active cases - ").set(active.toString());
+            ref.child("Total Recovered cases - ").set(recoveredCount.toString());
+            ref.child("Total Deaths - ").set(deathCount.toString());
 
             return Container(
-              height: height * 0.3,
+              height: height * 0.5,
               width: width * 0.95,
               child: Column(
                 children: <Widget>[
@@ -254,6 +277,61 @@ class CityDataList extends StatelessWidget {
                       ),
                     ),
                   ]),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(right: 1.0),
+                        margin: EdgeInsets.all(10),
+                        height: 50.0,
+                        child: ButtonTheme(
+                          minWidth: 150,
+                          child: FlatButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.black)),
+                            onPressed: () {
+
+                              ref.child("Your Location - ").set(city+" "+ state);
+                              ref.child("Total Confirmed case - ").set(totalCaseCount.toString());
+                              ref.child("Total Active cases - ").set(active.toString());
+                              ref.child("Total Recovered cases - ").set(recoveredCount.toString());
+                              ref.child("Total Deaths - ").set(deathCount.toString());
+                            },
+                            color: Colors.white,
+                            textColor: Colors.black,
+                            child: Text("Sync",
+                                style: TextStyle(fontSize: 15)),
+                          ),
+                        ),
+                      ),
+
+                      Container(
+                        padding: EdgeInsets.only(left: 1.0),
+                        margin: EdgeInsets.all(10),
+                        height: 50.0,
+                        child: ButtonTheme(
+                          minWidth: 150,
+                          child: FlatButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.black)),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => SpeechScreen()),
+                              );
+                            },
+                            color: Colors.black,
+                            textColor: Colors.white,
+                            child: Text("Resources",
+                                style: TextStyle(fontSize: 15)),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             );

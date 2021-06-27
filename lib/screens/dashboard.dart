@@ -1,3 +1,6 @@
+import 'package:covid_help/Quiz.dart';
+import 'package:covid_help/main.dart';
+import 'package:covid_help/profile_page.dart';
 import 'package:covid_help/screens/bot_message.dart';
 import 'package:covid_help/screens/camera.dart';
 import 'package:covid_help/screens/home.dart';
@@ -12,7 +15,7 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
   int currentIndex = 0;
-  final List<Widget> children = [Home(), Camera(), FlutterFactsChatBot()];
+  final List<Widget> children = [Home(), FlutterFactsChatBot(), UserProfilePage() ];
   AnimationController _controller;
 
   @override
@@ -59,11 +62,11 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
             ),
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.camera),
-              title: Text("Camera", style: TextStyle(fontFamily: 'MyFont'))),
+              icon: Icon(Icons.message_outlined),
+              title: Text("Chat", style: TextStyle(fontFamily: 'MyFont'))),
           BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              title: Text("About", style: TextStyle(fontFamily: 'MyFont')))
+              title: Text("Profile", style: TextStyle(fontFamily: 'MyFont')))
         ],
       ),
       body: currentIndex == 0

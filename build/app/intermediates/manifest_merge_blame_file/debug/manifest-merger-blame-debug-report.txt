@@ -5,15 +5,15 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="22"
+8        android:minSdkVersion="23"
 9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:10:5-67
-14-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:10:22-64
+14-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:10:5-67
+14-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:10:22-64
 15    <!--
 16     io.flutter.app.FlutterApplication is an android.app.Application that
 17         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -22,134 +22,188 @@
 20         FlutterApplication and put your custom class here.
 21    -->
 22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:8:5-79
-22-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:8:22-76
+22-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:8:5-79
+22-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:8:22-76
 23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-23-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:9:5-81
-23-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:9:22-78
+23-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:9:5-81
+23-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:9:22-78
 24    <uses-permission android:name="android.permission.CAMERA" />
-24-->[:camera] /home/shashank/Covid-help/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
-24-->[:camera] /home/shashank/Covid-help/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-62
-25    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-25-->[:camera] /home/shashank/Covid-help/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-71
-25-->[:camera] /home/shashank/Covid-help/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-68
-26
-27    <application
-27-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:12:5-50:19
-28        android:name="io.flutter.app.FlutterApplication"
-28-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:13:9-57
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.2.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/b6252bb7f30c7dceb20e97dfa6dfae00/core-1.2.0/AndroidManifest.xml:24:18-86
-30        android:debuggable="true"
-31        android:icon="@mipmap/ic_launcher"
-31-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:15:9-43
-32        android:label="covid_help" >
-32-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:14:9-35
-33        <activity
-33-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:16:9-44:20
-34            android:name="com.example.covid_help.MainActivity"
-34-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:17:13-41
-35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:20:13-163
-36            android:hardwareAccelerated="true"
-36-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:21:13-47
-37            android:launchMode="singleTop"
-37-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:18:13-43
-38            android:theme="@style/LaunchTheme"
-38-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:19:13-47
-39            android:windowSoftInputMode="adjustResize" >
-39-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:22:13-55
-40
-41            <!--
-42                 Specifies an Android theme to apply to this Activity as soon as
-43                 the Android process has started. This theme is visible to the user
-44                 while the Flutter UI initializes. After that, this theme continues
-45                 to determine the Window background behind the Flutter UI.
-46            -->
-47            <meta-data
-47-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:27:13-30:17
-48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:28:15-70
-49                android:resource="@style/NormalTheme" />
-49-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:29:15-52
-50            <!--
-51                 Displays an Android View that continues showing the launch screen
-52                 Drawable until Flutter paints its first frame, then this splash
-53                 screen fades out. A splash screen is useful to avoid any visual
-54                 gap between the end of Android's launch screen and the painting of
-55                 Flutter's first frame.
-56            -->
-57            <meta-data
-57-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:36:13-39:17
-58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-58-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:37:15-79
-59                android:resource="@drawable/launch_background" />
-59-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:38:15-61
-60
-61            <intent-filter>
-61-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:40:13-43:29
-62                <action android:name="android.intent.action.MAIN" />
-62-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:41:17-68
-62-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:41:25-66
-63
-64                <category android:name="android.intent.category.LAUNCHER" />
-64-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:42:17-76
-64-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:42:27-74
-65            </intent-filter>
-66        </activity>
-67        <!--
-68             Don't delete the meta-data below.
-69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-70        -->
-71        <meta-data
-71-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:47:9-49:33
-72            android:name="flutterEmbedding"
-72-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:48:13-44
-73            android:value="2" />
-73-->/home/shashank/Covid-help/android/app/src/main/AndroidManifest.xml:49:13-30
-74
-75        <activity
-75-->[:url_launcher] /home/shashank/Covid-help/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
-76            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-76-->[:url_launcher] /home/shashank/Covid-help/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
-77            android:exported="false"
-77-->[:url_launcher] /home/shashank/Covid-help/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
-78            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-78-->[:url_launcher] /home/shashank/Covid-help/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
-79
-80        <provider
-80-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
-81            android:name="com.dataxad.flutter_mailer.FlutterMailerFileProvider"
-81-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-80
-82            android:authorities="com.example.covid_help.adv_provider"
-82-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-64
-83            android:exported="false"
-83-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
-84            android:grantUriPermissions="true" >
-84-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
-85            <meta-data
-85-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:64
-86                android:name="android.support.FILE_PROVIDER_PATHS"
-86-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
-87                android:resource="@xml/flutter_mailer_paths" />
-87-->[:flutter_mailer] /home/shashank/Covid-help/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-61
-88        </provider>
-89
-90        <activity
-90-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/f81e9fffe318fdc5660099e12e35729e/play-services-base-17.2.1/AndroidManifest.xml:23:9-26:75
-91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-91-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/f81e9fffe318fdc5660099e12e35729e/play-services-base-17.2.1/AndroidManifest.xml:24:13-79
-92            android:exported="false"
-92-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/f81e9fffe318fdc5660099e12e35729e/play-services-base-17.2.1/AndroidManifest.xml:25:13-37
-93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-93-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/f81e9fffe318fdc5660099e12e35729e/play-services-base-17.2.1/AndroidManifest.xml:26:13-72
-94
-95        <meta-data
-95-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/86e78d7a3cbc5070b93fac98740ddc9f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:23:9-25:69
-96            android:name="com.google.android.gms.version"
-96-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/86e78d7a3cbc5070b93fac98740ddc9f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:24:13-58
-97            android:value="@integer/google_play_services_version" />
-97-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/86e78d7a3cbc5070b93fac98740ddc9f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:25:13-66
-98    </application>
-99
-100</manifest>
+24-->[:camera] /home/shashank/Coviscible-app/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
+24-->[:camera] /home/shashank/Coviscible-app/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-62
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+25-->[:camera] /home/shashank/Coviscible-app/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-71
+25-->[:camera] /home/shashank/Coviscible-app/build/camera/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-68
+26    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:25:5-79
+27-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:25:22-76
+28
+29    <application
+29-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:12:5-50:19
+30        android:name="io.flutter.app.FlutterApplication"
+30-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:13:9-57
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.2.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/fa6f4e21abebe2d79db3175d07d54142/core-1.2.0/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:15:9-43
+34        android:label="covid_help" >
+34-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:14:9-35
+35        <activity
+35-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:16:9-44:20
+36            android:name="com.example.covid_help.MainActivity"
+36-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:17:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:20:13-163
+38            android:hardwareAccelerated="true"
+38-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:21:13-47
+39            android:launchMode="singleTop"
+39-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:18:13-43
+40            android:theme="@style/LaunchTheme"
+40-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:19:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:22:13-55
+42
+43            <!--
+44                 Specifies an Android theme to apply to this Activity as soon as
+45                 the Android process has started. This theme is visible to the user
+46                 while the Flutter UI initializes. After that, this theme continues
+47                 to determine the Window background behind the Flutter UI.
+48            -->
+49            <meta-data
+49-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:27:13-30:17
+50                android:name="io.flutter.embedding.android.NormalTheme"
+50-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:28:15-70
+51                android:resource="@style/NormalTheme" />
+51-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:29:15-52
+52            <!--
+53                 Displays an Android View that continues showing the launch screen
+54                 Drawable until Flutter paints its first frame, then this splash
+55                 screen fades out. A splash screen is useful to avoid any visual
+56                 gap between the end of Android's launch screen and the painting of
+57                 Flutter's first frame.
+58            -->
+59            <meta-data
+59-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:36:13-39:17
+60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+60-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:37:15-79
+61                android:resource="@drawable/launch_background" />
+61-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:38:15-61
+62
+63            <intent-filter>
+63-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:40:13-43:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:41:17-68
+64-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:41:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:42:17-76
+66-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:42:27-74
+67            </intent-filter>
+68        </activity>
+69        <!--
+70             Don't delete the meta-data below.
+71             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+72        -->
+73        <meta-data
+73-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:47:9-49:33
+74            android:name="flutterEmbedding"
+74-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:48:13-44
+75            android:value="2" />
+75-->/home/shashank/Coviscible-app/android/app/src/main/AndroidManifest.xml:49:13-30
+76
+77        <service
+77-->[:firebase_database] /home/shashank/Coviscible-app/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+78            android:name="com.google.firebase.components.ComponentDiscoveryService"
+78-->[:firebase_database] /home/shashank/Coviscible-app/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+79            android:directBootAware="true"
+79-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+80            android:exported="false" >
+80-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:31:13-37
+81            <meta-data
+81-->[:firebase_database] /home/shashank/Coviscible-app/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+82-->[:firebase_database] /home/shashank/Coviscible-app/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[:firebase_database] /home/shashank/Coviscible-app/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+84            <meta-data
+84-->[:firebase_core] /home/shashank/Coviscible-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+85-->[:firebase_core] /home/shashank/Coviscible-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:firebase_core] /home/shashank/Coviscible-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
+88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+88-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:33:17-109
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-database:19.6.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/0f9d62a71fc833012a5e2906c030cffb/firebase-database-19.6.0/AndroidManifest.xml:34:17-82
+90            <!--
+91                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+92                clients to use it as well, by defining this registrar in their own core/common library.
+93            -->
+94            <meta-data
+94-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+95                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+95-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+97        </service>
+98
+99        <activity
+99-->[:url_launcher] /home/shashank/Coviscible-app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+100            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+100-->[:url_launcher] /home/shashank/Coviscible-app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+101            android:exported="false"
+101-->[:url_launcher] /home/shashank/Coviscible-app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+102            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+102-->[:url_launcher] /home/shashank/Coviscible-app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+103
+104        <provider
+104-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+105            android:name="com.dataxad.flutter_mailer.FlutterMailerFileProvider"
+105-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-80
+106            android:authorities="com.example.covid_help.adv_provider"
+106-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-64
+107            android:exported="false"
+107-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+108            android:grantUriPermissions="true" >
+108-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+109            <meta-data
+109-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:64
+110                android:name="android.support.FILE_PROVIDER_PATHS"
+110-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+111                android:resource="@xml/flutter_mailer_paths" />
+111-->[:flutter_mailer] /home/shashank/Coviscible-app/build/flutter_mailer/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-61
+112        </provider>
+113        <provider
+113-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+114            android:name="com.google.firebase.provider.FirebaseInitProvider"
+114-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+115            android:authorities="com.example.covid_help.firebaseinitprovider"
+115-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+117            android:exported="false"
+117-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+118            android:initOrder="100" />
+118-->[com.google.firebase:firebase-common:19.5.0] /home/shashank/.gradle/caches/transforms-2/files-2.1/a883863ecb267c3791aed1165f51bb14/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+119
+120        <activity
+120-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/619abba053f621d4e7f075aa1cc9b056/play-services-base-17.2.1/AndroidManifest.xml:23:9-26:75
+121            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+121-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/619abba053f621d4e7f075aa1cc9b056/play-services-base-17.2.1/AndroidManifest.xml:24:13-79
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/619abba053f621d4e7f075aa1cc9b056/play-services-base-17.2.1/AndroidManifest.xml:25:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-base:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/619abba053f621d4e7f075aa1cc9b056/play-services-base-17.2.1/AndroidManifest.xml:26:13-72
+124
+125        <meta-data
+125-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/0ec825bf28198fe4440d25c8373c407f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:23:9-25:69
+126            android:name="com.google.android.gms.version"
+126-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/0ec825bf28198fe4440d25c8373c407f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:24:13-58
+127            android:value="@integer/google_play_services_version" />
+127-->[com.google.android.gms:play-services-basement:17.2.1] /home/shashank/.gradle/caches/transforms-2/files-2.1/0ec825bf28198fe4440d25c8373c407f/jetified-play-services-basement-17.2.1/AndroidManifest.xml:25:13-66
+128    </application>
+129
+130</manifest>

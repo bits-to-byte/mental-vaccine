@@ -923,8 +923,8 @@ public final class R {
         public static final int common_open_on_phone = 0x7f0b0036;
         public static final int common_signin_button_text = 0x7f0b0037;
         public static final int common_signin_button_text_long = 0x7f0b0038;
-        public static final int search_menu_title = 0x7f0b0039;
-        public static final int status_bar_notification_info_overflow = 0x7f0b003a;
+        public static final int search_menu_title = 0x7f0b0041;
+        public static final int status_bar_notification_info_overflow = 0x7f0b0042;
     }
     public static final class style {
         private style() {}
