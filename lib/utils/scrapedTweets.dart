@@ -5,10 +5,10 @@ import 'dart:convert';
 // These keys are generated from the twitter developer page
 // Dont share the keys with anyone
 final _twitterOauth = new twitterApi(
-    consumerKey: "qkQkkAmgws8NKlxuSmEEbUlPa",
-    consumerSecret: "iPeKhxKzBLPB1NigC32z9CNq0HUT8RvhHWscYsAn5W6UtV1Nvg",
-    token: "838056936423698433-doRLDN6DPZUxWg7dyNptzWuD8N06Pb1",
-    tokenSecret: "lfpXMcwZItFqUuXT3RWIJxEKfy2vUcyrXNcGaYKTnLmRy"
+    consumerKey: env.consumer_key,
+    consumerSecret: env.consumer_secret,
+    token: env.token,
+    tokenSecret: env.token_secret
 );
 
 // Make the request to twitter
